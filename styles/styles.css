@@ -1,5 +1,7 @@
 /* Josh Comeau CSS Reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -8,6 +10,7 @@
 /* 2. Remove default margin */
 *:not(dialog) {
   margin: 0;
+  padding: 0;
 }
 
 /* 3. Enable keyword animations */
@@ -56,15 +59,62 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
+/* SIDEBAR STYLES */
+
 #sidebar {
     background-color: #1992D4;
     height: 100dvh;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    display: grid;
+    grid-template-rows: 1fr repeat(2, 2fr);
+    justify-content: left;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
+    span {
+        font-size: 1.5rem;
+    }
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding-bottom: 1.5rem;
+
+    svg {
+        color: #fff;
+    }   
+    
+    li {
+        display: flex;
+        padding: 1rem;
+        margin-left: -1rem;
+        gap: 1rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+#sidebar ul li:hover {
+    background-color: #1273a7;
+    border-radius: 0.5rem;
 }
 
 #main-content {

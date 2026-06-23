@@ -7,9 +7,30 @@
     <title>Document</title>
 </head>
 <body>
+    
     <main id="wrapper">
         <aside id="sidebar">
-
+            <div class="logo">
+                <i data-lucide="layout-dashboard"></i>
+                <span>Dashboard</span>
+            </div>
+            <div class="sidebar-list">
+                <ul>
+                    <li><i data-lucide="house"></i><span>Home</span></li>
+                    <li><i data-lucide="user"></i><span>Profile</span></li>
+                    <li><i data-lucide="messages-square"></i><span>Messages</span></li>
+                    <li><i data-lucide="history"></i><span>History</span></li>
+                    <li><i data-lucide="list-checks"></i><span>Tasks</span></li>
+                    <li><i data-lucide="users"></i><span>Communities</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-list">
+                <ul>
+                    <li><i data-lucide="settings"></i><span>Settings</span></li>
+                    <li><i data-lucide="circle-question-mark"></i><span>Support</span></li>
+                    <li><i data-lucide="shield-check"></i><span>Privacy</span></li>
+                </ul>
+            </div>
         </aside>
         <section id="main-content">
             <header>
@@ -18,5 +39,9 @@
             <article></article>
         </section>
     </main> 
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        lucide.createIcons();
+  </script>
 </body>
 </html>
