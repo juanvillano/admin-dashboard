@@ -25,6 +25,8 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* 6. Improve media defaults */
@@ -70,8 +72,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1992D4;
     height: 100dvh;
     color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 600;
     padding-top: 0.5rem;
@@ -126,4 +126,77 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-content > header {
     background-color: #ffffff;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.search-wrapper, .profile-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 1rem 1rem 2rem;
+    align-items: center;
+}
+
+ .header-search, .header-config {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+input[type="search"] {
+    background-color: #E2E8F0;
+    border: none;
+    border-radius: 1rem;
+    min-height: 2rem;
+    width: 80%;
+}
+
+button[type="button"] {
+    background-color: #1992D4;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1.75rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.header-profile-img {
+    background-color: #F0B429;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.header-profile-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+
+    .header-greeting {
+        font-weight: 600;
+        font-size: 0.90rem;
+    }
+
+    .header-profile-name {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .header-profile-img {
+        height: 64px;
+        width: 64px;
+    }   
+}
+
+.header-actions {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-start;
 }
