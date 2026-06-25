@@ -177,6 +177,15 @@ button[type="button"] {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    img {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 110%;
+    }
 }
 
 .header-profile-name {
@@ -203,6 +212,15 @@ button[type="button"] {
     .header-profile-img {
         height: 64px;
         width: 64px;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            left: 0;
+            width: 110%;
+        }
     }   
 }
 
@@ -250,6 +268,10 @@ button[type="button"] {
         align-items: center;
         justify-content: flex-end;
         gap: 1rem;
+
+        svg {
+            color: var(--color-text-muted);
+        }
     }
 }
 
@@ -319,6 +341,16 @@ button[type="button"] {
                     height: 40px;
                     width: 40px;
                     border-radius: 50%;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        position: absolute;
+                        display: inline-block;
+                        top: 0;
+                        left: 0;
+                        width: 110%;
+                    }
                 }
             }
         }
