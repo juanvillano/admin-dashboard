@@ -348,6 +348,7 @@ button[type="button"]:hover {
                     border-radius: 50%;
                     position: relative;
                     overflow: hidden;
+                    border: 1px solid var(--color-bg-muted);
 
                     img {
                         position: absolute;
