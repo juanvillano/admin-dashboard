@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
-    <main id="wrapper">
-        <aside id="sidebar">
+    <main class="wrapper">
+        <aside class="sidebar">
             <div class="logo">
                 <i data-lucide="layout-dashboard"></i>
                 <span>Dashboard</span>
@@ -32,7 +34,7 @@
                 </ul>
             </div>
         </aside>
-        <section id="main-content">
+        <section class="main-content">
             <header>
                 <div class="search-wrapper">
                     <div class="header-search">
@@ -64,12 +66,14 @@
                 <div class="projects">
                     <h2>Your projects</h2>
                     <div class="project-card">
-                        <div class="card_title">
+                        <div class="card_content">
+                            <div class="card_title">
                             <h3>Super Cool Project</h3>
                         </div>
-                        <div class="card_content">
+                        <div class="card_copy">
                             <p>Sed tempus ut lacus ut scelerisque.
 Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        </div>
                         </div>
                         <div class="card_actions">
                             <i data-lucide="star-plus"></i>
@@ -78,12 +82,14 @@ Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="card_title">
-                            <h3>Super Cool Project</h3>
-                        </div>
                         <div class="card_content">
+                            <div class="card_title">
+                            <h3>Less Cool Project</h3>
+                        </div>
+                        <div class="card_copy">
                             <p>Sed tempus ut lacus ut scelerisque.
 Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        </div>
                         </div>
                         <div class="card_actions">
                             <i data-lucide="star-plus"></i>
@@ -92,12 +98,14 @@ Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="card_title">
-                            <h3>Super Cool Project</h3>
-                        </div>
                         <div class="card_content">
+                            <div class="card_title">
+                            <h3>Impossible App</h3>
+                        </div>
+                        <div class="card_copy">
                             <p>Sed tempus ut lacus ut scelerisque.
 Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        </div>
                         </div>
                         <div class="card_actions">
                             <i data-lucide="star-plus"></i>
@@ -106,12 +114,14 @@ Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="card_title">
-                            <h3>Super Cool Project</h3>
-                        </div>
                         <div class="card_content">
+                            <div class="card_title">
+                            <h3>Easy Peasy App</h3>
+                        </div>
+                        <div class="card_copy">
                             <p>Sed tempus ut lacus ut scelerisque.
 Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        </div>
                         </div>
                         <div class="card_actions">
                             <i data-lucide="star-plus"></i>
@@ -120,12 +130,14 @@ Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="card_title">
-                            <h3>Super Cool Project</h3>
-                        </div>
                         <div class="card_content">
+                            <div class="card_title">
+                            <h3>Ad Blocker</h3>
+                        </div>
+                        <div class="card_copy">
                             <p>Sed tempus ut lacus ut scelerisque.
 Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        </div>
                         </div>
                         <div class="card_actions">
                             <i data-lucide="star-plus"></i>
@@ -134,12 +146,14 @@ Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="card_title">
-                            <h3>Super Cool Project</h3>
-                        </div>
                         <div class="card_content">
+                            <div class="card_title">
+                            <h3>Money Maker</h3>
+                        </div>
+                        <div class="card_copy">
                             <p>Sed tempus ut lacus ut scelerisque.
 Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        </div>
                         </div>
                         <div class="card_actions">
                             <i data-lucide="star-plus"></i>
@@ -151,11 +165,57 @@ Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
                 <div class="activity">
                     <div class="announcement">
                         <h2>Announcements</h2>
-                        <div></div>
+                        <div class="announcement_card">
+                            <ul>
+                                <li>
+                                    <p class="announcement_title">Site Maintenance</p>
+                                    <p class="announcement_copy">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                                </li>
+                                <li>
+                                    <p class="announcement_title">Community Share Day</p>
+                                    <p class="announcement_copy">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                                </li>
+                                <li>
+                                    <p class="announcement_title">Updated Privacy Policy</p>
+                                    <p class="announcement_copy">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="trending">
                         <h2>Trending</h2>
-                        <div></div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <div class="header-profile-img"></div>
+                                    <div>
+                                        <p class="profile_handle">@tegan</p>
+                                        <p class="profile_name">World Peace Builder</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="header-profile-img"></div>
+                                    <div>
+                                        <p class="profile_handle">@morgan</p>
+                                        <p class="profile_name">Super Cool Project</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="header-profile-img"></div>
+                                    <div>
+                                        <p class="profile_handle">@kendall</p>
+                                        <p class="profile_name">Life Changing App</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="header-profile-img"></div>
+                                    <div>
+                                        <p class="profile_handle">@alex</p>
+                                        <p class="profile_name">No Traffic Maker</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </article>
