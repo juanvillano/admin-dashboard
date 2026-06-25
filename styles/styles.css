@@ -292,8 +292,9 @@ button[type="button"] {
 
     div {
         background-color: #ffffff;
-        padding: 1rem;
+        padding: 0.75rem 1rem;
         border-radius: 0.5rem;
+        overflow-y: scroll;
 
         ul {
             list-style-type: none;
@@ -322,9 +323,9 @@ button[type="button"] {
 .trending {
     div {
         background-color: #ffffff;
-        padding: 1rem;
+        padding: 0.75rem 1rem;
         border-radius: var(--radius-card);
-
+        overflow: scroll;
         
         ul {
             list-style-type: none;
